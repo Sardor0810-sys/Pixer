@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border:1px solid #00BAFC;
+    transition: 0.3s linear;
+}
+button:hover{
+    transform: scale(1.1);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+                                  /*Navbar*/
+.navbar{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.navbar__img{
+    animation-name: navbar__img;
+    animation-duration: 3s;
+
+}
+@keyframes navbar__img {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }      
+}
+.navbar__list{
+    display: flex;
+    align-items: center;
+}
+.navbar__item{
+    margin-left: 30px;
+    animation-name: navbar__item;
+    animation-duration: 3s;
+}
+@keyframes navbar__item {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }    
+}
+.navbar__link{
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.navbar__link:hover{
+    border-bottom: 2px solid #000000;
+}
+                                /*header*/
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+.header__title{
+    font-size: 30px;
+    line-height: 130%;
+    color: #000000;
+    width: 500px;
+}
+.header__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    width: 465px;
+    margin: 16px 0;
+}
+                                          /*Main*/
+.main{
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+.main__title{
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+}
+.main__subtitle{
+    font-size: 20px;
+    line-height: 130%;
+    margin: 16px 0;
+}
+.main__subtext{
+    font-size: 16px;
+    line-height: 24px;
+}
+.main__text{
+    font-size: 16px;
+    line-height: 24px;
+    width: 719px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.main__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.main__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 320px;
+    transition: 0.3s ;
+    cursor: pointer;
+    margin-left: 90px;
+}
+.main__list:nth-child(1){
+    margin-left: 0;
+}
+.main__list:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.main__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__link{
+    text-decoration: underline;
+    color: #00BAFC;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 16px;
+    transition: 0.3s;
+}
+.main__link:hover{
+    text-decoration: none;
+    color: #28a8d6;
+    text-shadow: 0px 0px 2px #28a8d6;
+}
+
+                                    /*section*/
+.section{
+    padding: 56px 0;
+}
+.section__title{
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+}
+.section__text{
+    width: 719px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.section__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+.section__box:nth-last-of-type(even){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.section__card{
+    margin-right: 80px;
+}
+.section__subtitle{
+    font-size: 25px;
+    line-height: 130%;
+}
+.section__subtext{
+    width: 493px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.section__img{
+    width: 400px;
+}
+
+.section__form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+                                          /*page*/
+
+.page{
+    padding: 56px 0;
+    background: #00BAFC;
+}
+.page__title{
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+}
+.page__text{
+    width: 719px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+.page__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 348px;
+    height: 304px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 24px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.page__form input, .page__form select{
+    background: #F3F3F3;
+    border-radius: 5px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 16px;
+    line-height: 150%;
+    width: 300px;
+    margin-bottom: 16px;
+}
+
+
+                            /*Footer*/
+
+.footer{
+    padding: 56px 0;
+    background: #191919;
+}
+.footer .container{
+    display: flex;
+}
+.footer__title{
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.footer__text{
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    width: 320px;
+}
+.footer__link{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 8px;
+    transition: 0.3s linear;
+}
+.footer__link:hover{
+    transform: scale(1.1);
+    color: rgb(150, 146, 146);
+}
+.footer__link{
+    display: flex;
+    align-items: center;
+}
+.footer__link img{
+    margin-right: 8px;
+}
+.footer__left, .footer__middle{
+    margin-right: 100px;
+}
+
