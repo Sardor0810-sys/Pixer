@@ -29,6 +29,7 @@ button:hover{
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: red;
+    
 }
 .container{
     width: 1140px;
@@ -357,8 +358,19 @@ body{
           flex-direction: column;
           align-items: center;
       }
+      .header__box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
       .section__subtext{
           width: 450px;
+      }
+      .header__title{
+          text-align: center;
+      }
+      .header__text{
+          text-align: center;
       }
       .section__subtitle{
           width: 450px;
@@ -448,3 +460,182 @@ body{
         width: 450px;
     }
   }
+  @media only screen and (max-width: 520px){
+      .container{
+          width: 400px;
+          margin: 0 auto;
+      }
+  }
+  @media only screen and (max-width: 450px){
+      .container{
+          width: 370px;
+          margin: 0 auto;
+      }
+      button{
+          transform: scale(0.8);
+      }
+      .header__title, .main__title, .section__title, .section__subtitle, .page__title{
+          width: 340px;
+          font-size: 25px;
+      }
+      .main__form{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      }
+      .main__link{
+          margin-left: 0;
+          margin-top: 16px;
+      }
+      .main__box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .main__text, .header__text, .section__text, .section__subtext, .page__text{
+          width: 340px;
+          font-size: 15px;
+      }
+      .section__img{
+          width: 320px;
+          height: 250px;
+      }
+      .section__box{
+          width: 350px;
+      }
+      iframe{
+          width: 320px;
+          height: 250px;
+      }
+      
+      .main__list{
+          margin-left: 0;
+          width: 350px;
+      }
+  }
+  @media only screen and (max-width: 420px){
+    .container{
+        width: 300px;
+        margin: 0 auto;
+    }
+    button{
+        transform: scale(0.8);
+    }
+    .header__title, .main__title, .section__title, .section__subtitle, .page__title{
+        width: 280px;
+        font-size: 20px;
+    }
+    .main__form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main__link{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .main__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__text, .header__text, .section__text, .section__subtext, .page__text{
+        width: 280px;
+        font-size: 12px;
+    }
+    .section__img{
+        width: 280px;
+        height: 250px;
+    }
+    .section__box{
+        width: 350px;
+    }
+    iframe{
+        width: 280px;
+        height: 250px;
+    }
+    
+    .main__list{
+        margin-left: 0;
+        width: 280px;
+    }
+    .navbar__button{
+        font-size: 15px;
+        padding: 5px 10px;
+        width: 150px;
+    }
+    .page__form{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page__form input, .page__form select{
+        width: 250px;
+        padding: 10px 15px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .container{
+        width: 280px;
+        margin: 0 auto;
+    }
+    button{
+        transform: scale(0.8);
+    }
+    .header__title, .main__title, .section__title, .section__subtitle, .page__title{
+        width: 250px;
+        font-size: 16px;
+    }
+    .main__form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main__link{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .main__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__text, .header__text, .section__text, .section__subtext, .page__text{
+        width: 250px;
+        font-size: 12px;
+    }
+    .section__img{
+        width: 250px;
+        height: 200px;
+    }
+    .section__box{
+        width: 280px;
+    }
+    iframe{
+        width: 280px;
+        height: 250px;
+    }
+    
+    .main__list{
+        margin-left: 0;
+        width: 280px;
+    }
+    .navbar__button{
+        font-size: 15px;
+        padding: 5px 10px;
+        width: 150px;
+    }
+    .page__form{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page__form input, .page__form select{
+        width: 250px;
+        padding: 10px 15px;
+    }
+}
