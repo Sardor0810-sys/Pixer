@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+body {
+    background-color: #5B3D12 ;   
+    background-image: url('../image.jpg');
+}
+button {
+    color: green;
+}
+form {
+    color: #F2B051;
+    font-family: 'Zilla Slab', serif;
+    margin: 5px ;
+}
+button {
+    color: white;
+    font-weight: bold;
+    background-color: #DDAB13;
+}
+h1 {
+    color: #F2B051;
+    background-color: #855714;
+    text-decoration: underline overline;
+    border: 5px white double;
+    padding: 10px;
+}
+h4 {
+    background-color:  #855714;
+}
+p1 {
+    color: red;
+}
+textarea {
+    background-color: #7C6520;
+    color: #1EEADB;
+}
+input {
+    background-color: #FFD98A ;
+}
+select {
+    background-color: #FFD98A ;
+    color: black ;
+}
+p2 {
+    background-color: green;
+    color: green;
+}
+button:hover {
+    text-decoration: underline;
+}
+
